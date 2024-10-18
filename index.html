@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hitung Median</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: url('https://img.freepik.com/premium-photo/desktop-cute-wallpaper-hd-free-image_555090-17439.jpg') no-repeat center center fixed;
+            background-size: cover;
+            margin: 0;
+            padding: 20px;
+        }
+        .container {
+            max-width: 350px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #ffffff98;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        h2 {
+            color: #333;
+        }
+        label {
+            font-weight: bold;
+            display: block;
+            margin-bottom: 10px;
+        }
+        input, button {
+            padding: 10px;
+            margin: 5px 0;
+            width: calc(100% - 22px);
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        button {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+        .result {
+            margin-top: 20px;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            background-color: #f9f9f9;
+            position: relative;
+        }
+        .result h3 {
+            margin-top: 0;
+            color: #333;
+        }
+        .result p {
+            margin: 0;
+            line-height: 1.6;
+        }
+        .button-group {
+            margin-top: 50px;
+            display: none; /* Sembunyikan tombol secara default */
+            position: absolute;
+            bottom: 10px;
+            right: 10px;
+        }
+        .button-group button {
+            background-color: #f44336;
+            color: white;
+            margin-right: 10px;
+        }
+        .button-group button:hover {
+            background-color: #e53935;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Hitung Median Data Tunggal</h2>
+        <label for="dataInput">Masukkan data (pisahkan dengan koma):</label>
+        <input type="text" id="dataInput" placeholder="Contoh: 1,2,3,4,5,6,7,8,9,10">
+        <button onclick="calculateMedian()">Hitung Median</button>
+        <div id="result" class="result">
+            <!-- Hasil dan tombol kembali akan ditempatkan di sini -->
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
